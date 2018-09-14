@@ -36,7 +36,16 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+Adlm			Music			isus
+Adobe			New Unity Project	mtec1002
+Applications		Pictures		mtec1003-lab-03
+Desktop			Public			mtec1003-lab-03.tar.gz
+Documents		QLData			picture.jpg
+Downloads		Things			poopy
+Library			drills.py		pymel.log
+MPLABXProjects		ewhuil			stuff
+Movies			foo.txt			xgen
+Mrt.tar			ipe.properties
 
 
 ==========
@@ -44,7 +53,16 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+Adlm			Music			ipe.properties
+Adobe			New Unity Project	isus
+Applications		Pictures		mtec1002
+Desktop			Public			mtec1003-lab-03
+Documents		QLData			mtec1003-lab-03.tar.gz
+Downloads		Things			picture.jpg
+Library			bar.txt			poopy
+MPLABXProjects		drills.py		pymel.log
+Movies			ewhuil			stuff
+Mrt.tar			foo.txt			xgen
 
 
 ==========
