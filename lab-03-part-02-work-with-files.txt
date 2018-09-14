@@ -33,7 +33,7 @@ Follow the instructions line-by-line.
 6. Create a new file using touch.
 
 $ touch foo.txt
-$ ls
+$ ls 
 Copy and paste the output below.
 ----------
 Adlm			Music			isus
