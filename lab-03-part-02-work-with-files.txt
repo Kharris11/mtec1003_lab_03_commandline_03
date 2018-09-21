@@ -70,7 +70,11 @@ Mrt.tar			foo.txt			xgen
 
 Copy and paste the output below.
 ----------
-
+Desktop			Music			foo.txt
+Documents		Pictures		mtec1003-lab-03
+Downloads		Public			mtec1003-lab-03.tar.gz
+Library			[name
+Movies			bar.txt
 
 
 ==========
@@ -79,6 +83,12 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
+cp bar.txt baz.txt
+Desktop			Music			baz.txt
+Documents		Pictures		foo.txt
+Downloads		Public			mtec1003-lab-03
+Library			[name			mtec1003-lab-03.tar.gz
+Movies			bar.txt
 
 
 
@@ -87,13 +97,27 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm bar.txt
+Desktop			Music			foo.txt
+Documents		Pictures		mtec1003-lab-03
+Downloads		Public			mtec1003-lab-03.tar.gz
+Library			[name
+Movies			baz.txt
+
+
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
+ mv foo.txt qux.txt
+ Desktop			Music			mtec1003-lab-03
+Documents		Pictures		mtec1003-lab-03.tar.gz
+Downloads		Public			qux.txt
+Library			[name
+Movies			baz.txt 
 
 
 ==========
@@ -108,6 +132,9 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
+ rmdir my_files
+rmdir: my_files: No such file or directory
+G608-20:Users keenan.harris03$ 
 
 
 
@@ -117,6 +144,9 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 
+rm my_files
+rm: my_files: No such file or directory
+G608-20:Users keenan.harris03$ 
 
 
 ==========
@@ -128,6 +158,13 @@ $ rm -rf my_files
 ----------
 
 
+rm -rf my_files
+G608-20:~ keenan.harris03$ ls
+Desktop			Music			mtec1003-lab-03
+Documents		Pictures		mtec1003-lab-03.tar.gz
+Downloads		Public			qux.txt
+Library			[name
+Movies			baz.txt
 
 ==========
 16. There's a txt file version of a book located in the mtec1003-lab-03 folder.  It is in the following directory if you're in the lab folder:
@@ -151,6 +188,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
+ cat books/other/pg1232.txt
+cat: books/other/pg1232.txt: No such file or directory
+G608-20:~ keenan.harris03$ 
 
 
 ==========
@@ -163,7 +203,9 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below.
 ----------
 
-
+tail books/other/pg1232.txt
+tail: books/other/pg1232.txt: No such file or directory
+G608-20:~ keenan.harris03$ 
 
 ==========
 19. Using the same file...
@@ -174,6 +216,9 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less books/other/pg1232.txt
+books/other/pg1232.txt: No such file or directory
+G608-20:~ keenan.harris03$ 
 
 
 
@@ -182,8 +227,10 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
-
+cat: use it to show all contents of a file
+head: use it to see only the start of the file
+tail: use it to see onl the end of the file
+more/less : use to show the content of the file with pagination
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
